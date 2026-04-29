@@ -5,11 +5,12 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Calculadora de Daniel Felipe Oliveros rojas</h1>
+        <h1>Calculadora de Daniel Felipe Oliveros Rojas</h1>
         Number:
         <input type="text" id="n1">
         <p>
             <button onclick="cube()"> x^3 </button>
+            <button onclick="power4()"> x^4 </button>
             <button onclick="sine()"> sin </button>
         </p>
         <script type="text/javascript">
@@ -17,7 +18,11 @@
                 var num = document.getElementById("n1");
                 num.value = Math.pow(num.value, 3);
             }
-         function sine() {
+            function power4() {
+                var num = document.getElementById("n1");
+                num.value = Math.pow(num.value, 4);
+            }
+            function sine() {
                 var num = document.getElementById("n1");
                 num.value = Math.sin(num.value);
             }
